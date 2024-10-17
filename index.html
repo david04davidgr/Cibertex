@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David García Rodríguez">
+    <meta name="Description" content="CIBERTEX">
+    <meta name="keywords" content="ciberseguridad, CIBERTEX, HTML, CSS, Java script, Protección, redes, pagina web">
+    <link rel="stylesheet" href="CSS/indexstyle.css">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="Favicon/faviconinicio.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="Favicon/faviconinicio.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="Favicon/faviconinicio.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="Favicon/faviconinicio.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="Favicon/faviconinicio.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="Favicon/faviconinicio.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="Favicon/faviconinicio.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="Favicon/faviconinicio.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/faviconinicio.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="Favicon/faviconinicio.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/faviconinicio.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="Favicon/faviconinicio.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/faviconinicio.ico/favicon-16x16.png">
+    <link rel="manifest" href="Favicon/faviconinicio.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="Favicon/faviconinicio.ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/95eacc2461.js" crossorigin="David"></script>
+    <title>Inicio</title>
+    <style>
+        .contenido-porque > img{
+            margin-left: -10%;
+            margin-right: 5%;
+        }
+    </style>
+</head>
+<body>
+<!--Cabezera-->
+        <header>
+            <img class="logoimg" src="IMG/1.png" alt="Logo Cibertex">
+                <nav>
+                    <a href="#"><i class="fa-solid fa-house"></i>Inicio</a>
+                    <a href="HTML/Nuestros Servicios.html"><i class="fa-solid fa-shield-halved"></i>Servicios</a>
+                    <a href="HTML/Sobre Nosotros.html"><i class="fa-solid fa-users"></i>Nosotros</a>
+                    <a href="HTML/Contacto.html"><i class="fa-solid fa-phone"></i>Contacto</a>
+                </nav>
+            <!--Menú desplegable solo movil y tablet-->
+            <div class="botonmenu">
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                    <a href="#"><i class="fa-solid fa-house"></i>INICIO</a>
+                    <a href="HTML/Nuestros Servicios.html"><i class="fa-solid fa-shield-halved"></i>SERVICIOS</a>
+                    <a href="HTML/Sobre Nosotros.html"><i class="fa-solid fa-users"></i>NOSOTROS</a>
+                    <a href="HTML/Contacto.html"><i class="fa-solid fa-phone"></i>CONTACTO</a><br><br>
+                    <hr>
+                    <p style="color: white;">Redes Sociales
+                    <a href="https://www.instagram.com/cibertex/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <span style="font-size:35px;cursor:pointer" class="" onclick="openNav()">&#9776;</span>
+                <script>
+                function openNav() {
+                    document.getElementById("myNav").style.width = "100%";
+                }
+                function closeNav() {
+                    document.getElementById("myNav").style.width = "0%";
+                }
+                </script>
+            </div>
+        </header>
+<!--Parte 1-->
+        <div class="parte1">
+            <video autoplay muted loop id="background-video">
+                <source src="VIDEO/introvideo.mp4" type="video/mp4">
+            </video>
+                <div class="contenidop1">
+                    <h1 class="h1logo">CIBERTEX</h2>
+                    <p class="eslogan"><q>Protección adecuada en el momento adecuado</q><br>
+                    <p class="explicacion"> Es el momento de optar por la ciberseguridad y protegerte a ti y tus clientes. <br> 
+                                            No lo dudes más y contactanos, nuestros expertos te aconsejaran y solucionaran tus problemas. <br>
+                                            Mañana puede ser demasiado tarde.</p>
+                    <a class="botonvermas" href="HTML/Nuestros Servicios.html">
+                        <p style="color:rgb(54, 83, 71);">Ver Más</p>
+                    </a>
+                </div>
+        </div>
+        <div class="before-parte1">
+        </div>
+<!--Tarjetas-->
+        <div class="contenedortarjetas">
+           <div class="tarjeta1">
+                <h2 style="color: darkgoldenrod;"><i class="fa-solid fa-fingerprint"></i> SEGURIDAD ACTIVA</h2>
+                <hr>
+                <p>Todo tipo de servicios para evitar <br> ataques y posibles infiltraciones no autorizadas</p>
+           </div>
+           <div class="tarjeta2">
+                <h2 style="color: darkgoldenrod;"><i class="fa-solid fa-bug"></i> SEGURIDAD PASIVA</h2>
+                <hr>
+                <p>Todo tipo de servicios para actuar <br> lo mejor y lo antes posible a un ataque o vulneración sufrida, <br> reduciendo lo mas posible en perdidas o daños</p>
+           </div>
+           <div class="tarjeta3">
+                <h2 style="color: darkgoldenrod"><i class="fa-solid fa-file-lines"></i> GESTIÓN</h2>
+                <hr>
+                <p>Realizamos politicas de seguridad, <br> politicas de privacidad de datos, protocolos de actuacion <br> frente a vulneraciones o ataques, protocolos de seguridad y <br> concienciacion sobre un uso correcto y seguro de la informatica</p>
+           </div> 
+           <div class="tarjeta4">
+                <h2 style="color: darkgoldenrod"><i class="fa-solid fa-code"></i> DESARROLLO WEB</h2>
+                <hr>
+                <p>Asesoramos, diseñamos y creamos <br> paginas web completamente a medida y personalizadas</p>
+           </div> 
+        </div>
+    <!--Parte 2-->
+    <h2 class="parte2h2ciber">CIBERSEGURIDAD</h2>
+    <!--Por qué nos necesitas-->
+    <div class="contenedortarjetas2">
+        <div class="tarjeta">
+            <img src="IMG/mapaseguridad.jpg" alt="Mapa seguridad españa">
+            <h2>¿Por qué nos necesitas?</h2>
+            <p>
+                España se encuentra en el top 10 de los paises con más ataques registrados en el mundo <br><br>
+                En España se registran alrededor de 40.000 ataques en un solo día <br><br>
+                El aumento del uso de TIC's durante la pandemia de Covid-19 ha hecho que las empresas sean un objetivo principal para los ciberdelincuentes, debido a la gran cantidad de sistemas, redes y datos vulnerables.<br><br>
+            </p>
+            <a href="HTML/Contacto.html">
+                <button>
+                    Quiero saber Más...
+                </button>
+            </a>
+        </div>
+        <div class="tarjeta">
+            <img src="IMG/candado-llave.gif" alt="Mapa seguridad españa">
+            <h2>¿Qué Ofrecemos?</h2>
+            <p>
+                Para ello hemos creado Cibertex, para ayudarte, aconsejarte y equiparte con las mejores tecnologías y especialistas en ciberseguridad y desarrollo web<br><br>
+                Deja todo en nuestras manos y podrás estar tranquilo, tus sistemas y datos estarán a salvo con nosotros <br><br>
+            </p>
+            <a href="HTML/Nuestros Servicios.html">
+                <button style="margin-top: 18%;">
+                Ver servicios...
+                </button>
+            </a>
+        </div>
+</div>
+
+    <!--Mapa en vivo de ataques-->
+    <div class="parte2-mapa">
+        <h2>Mapa de ataques registrados en tiempo real</h2>
+        <iframe class="mapa-en-vivo-iframe" width="335" height="335" loading="lazy" src="https://cybermap.kaspersky.com/es/widget/dynamic/dark" frameborder="0"></iframe>
+        <p class="parte2-mapa-texto">A continuación le mostramos un mapa de ataques registrados en tiempo real por la empresa Kaspersky</p>
+        <ul class="parte2-mapa-texto">
+            <li>OAS (On-Access Scan)</li>
+            <li>ODS (On Demand Sccanner)</li>
+            <li>MAV (Mail Anti-virus)</li>
+            <li>WAV (Web Anti-virus)</li>
+            <li>IDS (Intrusion Detection Scan)</li>
+            <li>VUL (Vulnerability Scan)</li>
+            <li>KAS (Kaspersky Anti-Spam)</li>
+            <li>BAD (Botnet Activity Detection)</li>
+            <li>RMW (Ransomware)</li>
+        </ul>
+    </div>
+    <h2 class="parte2h2web">TE AYUDAMOS CON TU PÁGINA WEB</h2>
+    <!--Por qué nos necesitas-->
+    <div class="parte2-web">
+        <h2>¿Has soñado alguna vez con tener tu propia página web?</h2>
+        <div class="contenido-web">
+            <ul class="lista-porque">
+                <li>No hay problema, tenemos la solucion para que juntos creemos la web de tu negocio, blog... de tus sueños.</li>
+                <li>Páginas web 100% personalizables (todo a tu gusto, tu decides)</li>
+                <li>No te agobies, nosotros nos encargarmos de todooo</li>
+                <li>Nos encargamos de mantener tu página web actualizada</li>
+                <li>Páginas web dinamicas o estaticas, tu decides</li>
+            </ul>
+            <img src="IMG/web.jpg" alt="web" width="20%" height="auto">
+        </div>
+    </div>
+<footer>
+    <div class="footer-left">
+        <h4>Politicas</h4>
+        <hr>
+        <ul>
+            <li><a href="/HTML/TerminosLegales.html">Términos Legales</a></li>
+            <li><a href="/HTML/PoliticaPrivacidad.html">Política de Privacidad</a></li>
+            <li><a href="/HTML/PoliticaCookies.html">Política de Cookies</a></li>
+        </ul>
+    </div>
+    <div class="footer-center">
+        <div id="reloj"></div>
+        <script>
+        function mostrarHora() {
+            var fecha = new Date();
+            var horas = fecha.getHours();
+            var minutos = fecha.getMinutes();
+            var segundos = fecha.getSeconds();
+
+            horas = horas < 10 ? '0' + horas : horas;
+            minutos = minutos < 10 ? '0' + minutos : minutos;
+            segundos = segundos < 10 ? '0' + segundos : segundos;
+
+            var horaActual = horas + ':' + minutos + ':' + segundos;
+
+            var reloj = document.getElementById('reloj');
+            reloj.innerHTML = horaActual;
+
+            setTimeout(mostrarHora, 1000);
+        }
+        mostrarHora();
+        </script>
+        <h3>CIBERTEX</h3>
+        <div class="RRSS">
+            <ul style="text-decoration: none ;color: white;">
+                <li><a href="https://www.instagram.com/" class="ig" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/?locale=es_ES" class="fb" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/home?lang=es" class="x" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+        <p class="linea-final">CIBERTEX ® 2023 </p>
+    </div>
+    <div class="footer-right">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="HTML/Nuestros Servicios.html">Servicios</a></li>
+            <li><a href="HTML/Sobre Nosotros.html">Nosotros</a></li>
+            <li><a href="HTML/Contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

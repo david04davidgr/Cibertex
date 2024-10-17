@@ -1,0 +1,619 @@
+*{
+    padding: 0;
+    margin: 0;
+    scrollbar-width: none;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    margin: 0;
+    background: #004225;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/*Header*/
+header{
+    display: flex;
+    background-image:url(../IMG/fondoheader.jpg);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    border-bottom: 5px solid darkgoldenrod;
+}
+
+.nombre-empresa{
+    text-shadow: 3px 1px 2px rgba(0,0,0,0.6);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+
+    font-size: 160%;
+    color: darkgoldenrod;
+}
+
+.logo > img{
+    height: 100px;
+    width: auto;
+    border-radius: 30%;
+    margin-right: 3%;
+}   
+
+/*Animación nav*/
+nav a:after{
+    content: "";
+    position: absolute;
+    background-color: darkgoldenrod;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.6s;
+}
+
+a:hover:after{
+    width: 100%;
+}
+
+header a{
+    font-weight: 600;
+    padding-right: 20px;
+    position: relative;
+    text-decoration:none ;
+    color:darkgoldenrod;
+    font-size: 130%;
+    padding: 0 10px;
+}
+
+nav a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.botonmenu{
+    display: none;
+}
+
+/*Contenido*/
+
+.h2Contact{
+    font-size: 2.75vw;
+    text-align: center; 
+    color: darkgoldenrod;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    text-shadow: 3px 1px 2px rgba(0,0,0,0.6);
+
+}
+
+.textoCont{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 0 20%;
+    margin-bottom: 2%;
+
+    p {
+    background-color: lightgray;
+    margin: 0 2%;
+    border-top: #b8860b 8px solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1.10vw;
+    color: #000000;
+    text-align: center;
+    padding: 2% 7%;
+    }
+
+}
+
+.imagen{
+    margin-left: 40%;
+    margin-bottom: 1.25%;
+    width: 20%;
+    height: auto;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+
+    a{
+        text-decoration: none;
+    }
+}
+
+.button-Formulario {
+  align-items: center;
+  background-image: linear-gradient(144deg,#969696, #b8860b 50%,#5d5d5d);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  text-shadow: 1px 5px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.button-Formulario:active,
+.button-Formulario:hover {
+  outline: 0;
+}
+
+.button-Formulario span {
+  background-color: rgb(0, 0, 0);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-Formulario:hover span {
+  background: none;
+}
+
+
+.infoContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 2% 2%;
+    border-bottom-left-radius: 50px;
+    border-left: #b8860b 5px solid;
+    border-top-right-radius: 50px;
+    border-right: #000000 5px solid;
+    background-color: lightgray;
+
+    img{
+        display: flex;
+        filter: drop-shadow(1px 1px 2.5px #b8860b);
+    }
+
+    h3{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+}
+
+.infoBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    
+    img{
+        width: 30%;
+    }
+
+    h3{
+        text-align: center;
+        color: #b8860b;
+        font-size: 1.25vw;
+        font-weight: bold;
+    }
+
+    p{
+        margin-top: -1%;
+        color: black;
+        text-align: center;
+    }
+}
+
+.encuentranos{
+    color: #b8860b;
+    text-align: center;
+    font-size: 200%;
+    margin-top: 4%;
+    text-shadow: 2px 2px 5px rgba(90, 179, 238, 0.30); 
+}
+
+iframe{
+    width: 50%;
+    height: 500px;
+    margin-left: 25%;
+    margin-bottom: 4%;
+    margin-top: 0.5%;
+}
+
+/*Footer*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    border-top: darkgoldenrod solid 5px;
+    margin-top: 2%;
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(24, 17, 4);
+    color:white;
+    text-align: center;
+}
+
+.footer-left ul,
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-left ul a,
+.footer-right ul a {
+    text-decoration: none;
+    color: white;
+    font-weight: 50;
+}
+
+.footer-left ul a:hover,
+.footer-right ul a:hover {
+    color: darkgray;
+    text-shadow: 1px 1px 2px darkgoldenrod;
+}
+
+.footer-left{
+    margin-left: 5%;
+    margin-top: 2%;
+
+    h4{
+        font-size: 1.5vw;
+    }
+
+    ul{
+        margin-top: 2%;
+        font-size: 1.05vw;
+    }
+}
+
+.footer-center{
+    margin-left: -5%;
+
+    #reloj{
+        margin-top: 4%;
+        margin-bottom: -11%;
+    }
+}
+
+.footer-center h3 {
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b7860b;
+    margin-top: 11%;
+}
+
+.footer-right{
+    margin-right: 5%;
+    margin-top: 2.5%;
+
+    ul{
+        font-size: 1.15vw;
+    }
+}
+
+.RRSS{
+    display:flex;
+    justify-content: center;
+    font-size: 1.50vw;
+    margin-top: 1%;
+}
+
+.RRSS > a{
+    color: white;
+}
+
+.RRSS > ul,li{
+    display: flex;
+    padding: 0 15px;
+}
+
+.RRSS a:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.ig,.fb,.x{
+    color: white;
+    transition: 0.7s;
+}
+
+.ig:hover{
+    color: #9E37B8;
+    text-shadow: 1px 1px 7px #686868;
+}
+
+.fb:hover{
+    color: #1877f2;
+    text-shadow: 1px 1px 7px #686868;
+}
+
+.x:hover{
+    color: #1DA1F2;
+    text-shadow: 1px 1px 7px #686868;
+}
+
+.linea-final{
+    margin-top: 5%;
+    font-size: 1vw;
+}
+
+
+/*Ajuste de pantallas*/
+
+@media (min-width: 1024px){
+
+}
+
+@media (max-width: 916px){
+
+    body{
+        width: 100%;
+    }
+
+    .logo{
+        width: 10%;
+        height: auto;
+    }
+
+    .logo img{
+        width: 150%;
+        height: auto;
+        margin-left: 60%;
+        margin-top: -30%;
+    }
+
+    header{
+        width: auto;
+        height: 190px;
+        display:inline-block;
+    }
+
+    h2.nombre-empresa{
+        margin-left: -15%;
+        margin-top: 50%;
+        font-size: 10vw;
+    }
+
+    nav{
+        display: none;
+        font-size: 50%;
+        margin-top: -15%;
+        margin-bottom: 3%;
+        margin-left: 0%;
+
+    }
+
+    a.logo{
+        cursor: default !important;
+        pointer-events: none;
+        padding-right: 40%;
+    }
+
+    .imagen{
+        width: 50%;
+        height: auto;
+        margin-left: 25%;
+    }
+
+    iframe{
+        margin-left: 25%;
+        width: 50%; 
+        height: auto;
+    }
+
+    p{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    /*Botón menú*/
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: darkgoldenrod;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
+        }
+    .botonmenu{
+        display: block;
+        color:darkgoldenrod;
+        font-weight: bold;
+        margin-left: 82%;
+        margin-top: -19%;
+        text-shadow: 2px 1px 1px rgb(0, 0, 0);
+    }
+
+    p .botonmenu{
+        color:white;
+    }
+
+}
+
+@media (max-width: 480px){
+    body{
+        width: 100%;
+    }
+
+    .logo{
+        width: 10%;
+        height: auto;
+    }
+
+    .logo img{
+        width: 150%;
+        height: auto;
+        margin-left: 60%;
+        margin-top: 10%;
+    }
+
+    header{
+        width: auto;
+        height: 130px;
+        display:inline-block;
+    }
+
+    h2.nombre-empresa{
+        margin-left: -20%;
+        margin-top: 115%;
+        font-size: 10vw;
+    }
+
+    nav{
+        display: none;
+        font-size: 50%;
+        margin-top: -15%;
+        margin-bottom: 3%;
+        margin-left: 0%;
+
+    }
+
+    a.logo{
+        cursor: default !important;
+        pointer-events: none;
+        padding-right: 40%;
+    }
+
+    .imagen{
+        width: 50%;
+        height: auto;
+        margin-left: 25%;
+    }
+
+    iframe{
+        margin-left: 25%;
+        width: 50%; 
+        height: auto;
+    }
+
+    p{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+/*Botón menú*/
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: darkgoldenrod;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+    }
+.botonmenu{
+    display: block;
+    color:darkgoldenrod;
+    font-weight: bold;
+    margin-left: 80%;
+    margin-top: -20%;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+
+p .botonmenu{
+    color:white;
+}
+
+}

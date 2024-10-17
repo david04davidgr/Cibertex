@@ -1,0 +1,87 @@
+body{
+    width: 100%;
+    font-family: sans-serif;
+    margin: 0;
+    background: #00301b;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/*Header*/
+header{
+    display: flex;
+    height: 102px;
+    background-image:url(../IMG/fondoheader.jpg);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    border-bottom: 5px solid darkgoldenrod;
+}
+
+.nombre-empresa{
+    text-shadow: 3px 1px 2px rgba(0,0,0,0.6);
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 160%;
+    color: darkgoldenrod;
+}
+
+.logo > img{
+    height: 100px;
+    width: auto;
+    border-radius: 30%;
+    margin-right: 3%;
+}   
+
+/*Animación nav*/
+nav a:after{
+    content: "";
+    position: absolute;
+    background-color: darkgoldenrod;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.6s;
+}
+
+a:hover:after{
+    width: 100%;
+}
+
+header a{
+    font-weight: 600;
+    padding-right: 20px;
+    position: relative;
+    text-decoration:none ;
+    color:darkgoldenrod;
+    font-size: 130%;
+    padding: 0 10px;
+}
+
+nav a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.botonmenu{
+    display: none;
+}
+
+/*Contenido*/
+
+.lista{
+    background-color: rgba(211, 211, 211,0.75);
+    border-radius: 20px;
+    margin: 2% 10%;
+    padding: 1% 20%;
+    color: black;
+
+    h2{
+        text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.8);
+    }
+
+}
